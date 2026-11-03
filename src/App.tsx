@@ -187,10 +187,20 @@ function App() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-cyan-500 opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500" />
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col h-full">
                   <div className="text-4xl mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                  <p className="text-gray-400 leading-relaxed text-sm">{feature.description}</p>
+                  <p className="text-gray-400 leading-relaxed text-sm flex-1">{feature.description}</p>
+                  {'link' in feature && Boolean((feature as { link?: string }).link) && (
+                    <a
+                      href={(feature as { link: string }).link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
+                    >
+                      {('linkText' in feature && (feature as { linkText?: string }).linkText) || 'Ver en GitHub'} →
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

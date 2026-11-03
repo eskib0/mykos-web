@@ -60,7 +60,9 @@ export const translations = {
         {
           icon: '🖥️',
           title: 'Apps de Escritorio',
-          description: 'Monitor de sistema en tiempo real (GTK4) y Analizador de disco con detección de duplicados (PySide6).',
+          description: 'Suite nativa para Linux: cliente seguro de WhatsApp Web (MyKOS-Whats, Qt6), Monitor de sistema en tiempo real (GTK4) y Analizador de disco (PySide6).',
+          link: 'https://github.com/eskib0/mykos-whats',
+          linkText: 'Ver MyKOS-Whats en GitHub',
         },
       ],
     },
@@ -282,7 +284,9 @@ export const translations = {
         {
           icon: '🖥️',
           title: 'Desktop Apps',
-          description: 'Real-time system monitor (GTK4) and disk analyzer with duplicate detection (PySide6).',
+          description: 'Native Linux suite: secure WhatsApp Web client (MyKOS-Whats, Qt6), real-time system monitor (GTK4), and disk analyzer (PySide6).',
+          link: 'https://github.com/eskib0/mykos-whats',
+          linkText: 'View MyKOS-Whats on GitHub',
         },
       ],
     },
