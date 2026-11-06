@@ -27,6 +27,11 @@ export const translations = {
         { value: '12+', label: 'Proveedores IA' },
       ],
     },
+    teaser: {
+      badge: 'DEMO OFICIAL · 48s',
+      title: 'Conoce a MyKOS en acción',
+      subtitle: 'Inferencia local en GPU a 40+ tok/s, control de riesgo criptográfico y voz propia. Tu máquina, tus reglas.',
+    },
     features: {
       title: 'Todo en un solo',
       highlight: 'ecosistema',
@@ -250,6 +255,11 @@ export const translations = {
         { value: '207', label: 'REA Tools' },
         { value: '12+', label: 'AI Providers' },
       ],
+    },
+    teaser: {
+      badge: 'OFFICIAL DEMO · 48s',
+      title: 'Meet MyKOS in Action',
+      subtitle: '40+ tok/s local GPU inference, cryptographic safety perimeter, and native voice. Your machine, your rules.',
     },
     features: {
       title: 'Everything in one',

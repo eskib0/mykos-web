@@ -160,6 +160,38 @@ function App() {
         </div>
       </section>
 
+      {/* Video Teaser Section */}
+      <section className="relative px-6 -mt-6 mb-24 z-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-mono mb-3">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              {t.teaser.badge}
+            </div>
+            <h2 className="text-2xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
+              {t.teaser.title}
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+              {t.teaser.subtitle}
+            </p>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden border border-emerald-500/30 bg-black/60 shadow-2xl shadow-emerald-500/10 group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 rounded-2xl blur opacity-50 group-hover:opacity-75 transition duration-500 -z-10" />
+            <video
+              className="w-full aspect-video rounded-2xl bg-black"
+              controls
+              playsInline
+              preload="metadata"
+              poster="./mykos_poster.png"
+            >
+              <source src="./mykos_teaser.mp4" type="video/mp4" />
+              Tu navegador no soporta el reproductor de vídeo HTML5.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section
         id="features"
